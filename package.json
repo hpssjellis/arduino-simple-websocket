@@ -1,12 +1,12 @@
 {
-  "name": "Particle-Spark-Core-Photon-Websocket-Hack",
-  "version": "0.0.3",
+  "name": "arduino-simple-websocket",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack.git"
+    "url": "https://github.com/hpssjellis/arduino-simple-websocket"
   },
   "dependencies": {
-    "express": "4.14.0",
+    "express": "4.17.1",
     "ws": "7.2.1"
   }
 }
