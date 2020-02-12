@@ -15,8 +15,13 @@ ws.onmessage = function (event) {
 };
 
  ws.onconnection = function (event) {
-    ws.send('something');
+    ws.send('Hello Websocket');
 }; 
+    
+ ws.onopen = function (event) {
+    console.log('Socket Open');
+}; 
+
 
 
 </script>
