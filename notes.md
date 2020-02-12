@@ -1,3 +1,26 @@
+Present testing of the github on gitpod is showing that this package.json configuration works
+
+```
+  "dependencies": {
+    "express": "4.17.1",
+    "ws": "0.5.0"
+  }
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 HTTP/1.1 101 Switching Protocols
