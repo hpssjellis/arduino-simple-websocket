@@ -13,6 +13,11 @@ Additionally, the server can decide on extension/subprotocol requests here; see 
 
 try it on http://www.sha1-online.com/
 
+http://www.utilities-online.info/base64/#.XkNfg2hKiUl
+
+
+I am not getting sensible values.
+
 Note: This seemingly overcomplicated process exists so that it's obvious to the client whether or not the server supports WebSockets. This is important because security issues might arise if the server accepts a WebSockets connection but interprets the data as a HTTP request.
 
 So if the Key was "dGhlIHNhbXBsZSBub25jZQ==", the Sec-WebSocket-Accept header's value is "s3pPLMBiTxaQ9kYGzzhZRbK+xOo=". Once the server sends these headers, the handshake is complete and you can start swapping data!
