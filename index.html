@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<title>Arfuino fast weeb page communication using a Node WS Express websocket</title>
+<title>Arduino fast web page communication using a Node WS Express websocket</title>
 
 </head>
 
@@ -21,7 +21,7 @@ ws.onmessage = function (event) {
 
 </script>
 
-Use this to test new controls flashed to the Photon
+Use this to test new controls flashed to the Arduino
 <input id="myIn1" type=text value=E ><input type=button value=send onclick="{
    ws.send(document.all.myIn1.value)
 }"><br><br>
@@ -31,32 +31,21 @@ Use this to test new controls flashed to the Photon
 <input id="myOff"  type=button style="font-size:25px" value="send D7-OFF = B using touchstart" ontouchstart="{ws.send('B');return false;}" onclick="{ws.send('B');}"><br><br><br><br>
 
 
-   
-   
-
-   
-    
 <br><br><br><br>  
 <h1>C ping Sent every 12 seconds</h1>
 <div id="myDiv1">  here<br>  </div>
   
-   
+  
+Use at your own risk, by Jeremy Ellis<br>
+Website: <a href="http://rocksetta.com/">http://rocksetta.com/</a><br>
+Twitter: @rocksetta    
     
     
     
     
     
-    
-    
-    
-    <h2>The following can be deleted</h2 >  
-    
-    
-    
-    
-    
-    
- <br><br><br><br>  
+<h2>The following can be deleted once things are working</h2 >  
+     
 Enter a delay<input type=text id="myDelay" size=20 value=100>  milliseconds per command<br>  
 Timer result <input type=text id="myWaitOut" size=70 > Watch that 10 flashes actually occur. <br>
 Lower the ms until only a few flashes occur or the LED does not turn off!<br>
@@ -91,9 +80,7 @@ On my network I consistently can get 60 ms per command.<br>
 }"><br>
 
 
-Use at your own risk, by Jeremy Ellis<br>
-Website: <a href="http://rocksetta.com/">http://rocksetta.com/</a><br>
-Twitter: @rocksetta
+
 
 </body>
 </html>
