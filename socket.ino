@@ -34,12 +34,13 @@ int status = WL_IDLE_STATUS;
 // if you don't want to use DNS (and reduce your sketch size)
 // use the numeric IP instead of the name for the server:
 //IPAddress server(74,125,232,128);  // numeric IP for Google (no DNS)
-char server[] = "ml-websocket-05.jerteach.repl.co";    // name address for Google (using DNS)
+char server[] = "8080-dd8935e6-0d54-4378-a0a8-a4e9a61135dd.ws-us02.gitpod.io";    // name address for Google (using DNS)
 
 // Initialize the Ethernet client library
 // with the IP address and port of the server
 // that you want to connect to (port 80 is default for HTTP):
-WiFiClient client;
+//WiFiClient client;
+WiFiSSLClient client;
 
 void setup() {
   pinMode(LED_BUILTIN,OUTPUT);
@@ -75,17 +76,21 @@ void setup() {
   printWifiStatus();
 
   Serial.println("\nStarting connection to server...");
-  // if you get a connection, report back via serial:
-  if (client.connect(server, 80)) {
+  // if you get a connection, report back via serial:  
+  //if (client.connect(server, 80)) {
+  if (client.connect(server, 443)) {
     Serial.println("connected to server");
     // Make a HTTP request:
     client.println("GET / HTTP/1.1");
-    client.println("Host: ml-websocket-05.jerteach.repl.co");
+    client.println("Host: 8080-dd8935e6-0d54-4378-a0a8-a4e9a61135dd.ws-us02.gitpod.io");
     client.println("Upgrade: websocket");
     client.println("Connection: Upgrade");
     client.println("Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==");
+    client.println("Sec-WebSocket-Protocol: chat, superchat, soap");
     client.println("Sec-WebSocket-Version: 13");
-    client.println();  
+    client.println("Sec-WebSocket-Extensions: deflate-frame");
+    client.println("Origin: http://192.168.1.84");
+    client.println();   
   }
 }
 
