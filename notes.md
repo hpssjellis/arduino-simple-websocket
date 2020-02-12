@@ -3,7 +3,7 @@ Present testing of the github on gitpod is showing that this package.json config
 ```
   "dependencies": {
     "express": "4.17.1",
-    "ws": "0.8.0"
+    "ws": "1.0.1"
   }
 
 ```
