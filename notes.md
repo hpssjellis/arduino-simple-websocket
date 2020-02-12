@@ -3,10 +3,15 @@ Present testing of the github on gitpod is showing that this package.json config
 ```
   "dependencies": {
     "express": "4.17.1",
-    "ws": "0.5.0"
+    "ws": "0.6.1"
   }
 
 ```
+
+Seems that permessage-deflate extension added in version 0.6.0 and disabled in 0.6.1 is possibly th emain problem at the moment.
+
+https://github.com/websockets/ws/pull/409
+
 
 
 
