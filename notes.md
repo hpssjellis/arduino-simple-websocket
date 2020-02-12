@@ -3,10 +3,15 @@ Present testing of the github on gitpod is showing that this package.json config
 ```
   "dependencies": {
     "express": "4.17.1",
-    "ws": "1.0.1"
+    "ws": "1.1.1"
   }
 
 ```
+
+but version 2.0.0-beta.0 seems to kill it. I wonder if the permessage-deflate has been re-introduced???
+
+
+
 
 Seems that permessage-deflate extension added in version 0.6.0 and disabled in 0.6.1 is possibly th emain problem at the moment.
 
