@@ -1,5 +1,10 @@
 # arduino-simple-websocket
-How to connect an Arduino to a node js websocket for fast webpage to aRDUINO COMMUNICATION.
+How to connect an Arduino to a node js websocket for fast webpage to Arduino to webpage communication.
+
+
+Note: My main Arduino Robotics Teaching site is at https://github.com/hpssjellis/arduino-high-school-robotics-course
+
+
 
 
 To load on gitpod.io click this url
@@ -43,4 +48,15 @@ socket.ino is loaded on your arduino. It will need the URL from the above index.
 
 
 
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!
 
