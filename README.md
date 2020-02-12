@@ -11,7 +11,10 @@ To load on gitpod.io click this url
 
 https://gitpod.io/#github.com/hpssjellis/arduino-simple-websocket
 
-Then degrade the package.json file to:
+Using the .gitpod.yml file things hould auto install on gitpod.
+
+
+If things aren't working then degrade the package.json file to:
 
 
 ```
