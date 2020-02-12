@@ -1,0 +1,4 @@
+  
+tasks:
+  -  command: npm install   &&
+              node index.js
