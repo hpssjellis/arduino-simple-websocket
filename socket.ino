@@ -34,7 +34,16 @@ int status = WL_IDLE_STATUS;
 // if you don't want to use DNS (and reduce your sketch size)
 // use the numeric IP instead of the name for the server:
 //IPAddress server(74,125,232,128);  // numeric IP for Google (no DNS)
-char server[] = "8080-dd8935e6-0d54-4378-a0a8-a4e9a61135dd.ws-us02.gitpod.io";    // name address for Google (using DNS)
+
+
+///////////////////////// Node Websocket server url without http:// or ending /  ////////
+
+char server[] = "8080-dd8935e6-0d54-4378-a0a8-a4e9a61135dd.ws-us02.gitpod.io";    
+
+///////////////////////// above is important  ////////
+
+String myRandWebSocket = String(rand()*10000+10000); //attempt at random security
+
 
 // Initialize the Ethernet client library
 // with the IP address and port of the server
@@ -82,10 +91,11 @@ void setup() {
     Serial.println("connected to server");
     // Make a HTTP request:
     client.println("GET / HTTP/1.1");
-    client.println("Host: 8080-dd8935e6-0d54-4378-a0a8-a4e9a61135dd.ws-us02.gitpod.io");
+    client.println("Host: "+String(server));
     client.println("Upgrade: websocket");
     client.println("Connection: Upgrade");
-    client.println("Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==");
+   // client.println("Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==");
+    client.println("Sec-WebSocket-Key: " + String(myRandWebSocket) + String(myRandWebSocket));
     client.println("Sec-WebSocket-Protocol: chat, superchat, soap");
     client.println("Sec-WebSocket-Version: 13");
     client.println("Sec-WebSocket-Extensions: deflate-frame");
@@ -102,9 +112,11 @@ void loop() {
     Serial.write(c);
     if (c == 'A') {
        digitalWrite(LED_BUILTIN, 1);               // GET /H turns the LED on
+       Serial.println();
     }    
     if (c == 'B') {
        digitalWrite(LED_BUILTIN, 0);               // GET /H turns the LED on
+       Serial.println();
     }
   }
 
