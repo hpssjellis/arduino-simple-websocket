@@ -15,3 +15,13 @@ index.html is loaded by index.js
 socket.ino is loaded on your arduino. It will need the URL from the above index.html file when it is active.
 
 
+Github does not like the old version of ws but the original websocket works best with it
+```
+
+  "dependencies": {
+    "express": "4.14.0",
+    "ws": "0.4.32"
+   }
+```
+
+
