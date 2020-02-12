@@ -51,3 +51,129 @@ Note: This seemingly overcomplicated process exists so that it's obvious to the 
 So if the Key was "dGhlIHNhbXBsZSBub25jZQ==", the Sec-WebSocket-Accept header's value is "s3pPLMBiTxaQ9kYGzzhZRbK+xOo=". Once the server sends these headers, the handshake is complete and you can start swapping data!
 
 
+
+
+WS versions
+
+
+```
+7.2.1
+2 months ago
+7.2.0
+4 months ago
+7.1.2
+6 months ago
+7.1.1
+7 months ago
+7.1.0
+7 months ago
+7.0.1
+8 months ago
+7.0.0
+9 months ago
+6.2.1
+a year ago
+6.2.0
+a year ago
+6.1.4
+a year ago
+6.1.3
+a year ago
+6.1.2
+a year ago
+6.1.1
+a year ago
+6.1.0
+a year ago
+6.0.0
+2 years ago
+5.2.2
+2 years ago
+5.2.1
+2 years ago
+5.2.0
+2 years ago
+5.1.1
+2 years ago
+5.1.0
+2 years ago
+5.0.0
+2 years ago
+4.1.0
+2 years ago
+4.0.0
+2 years ago
+3.3.3
+2 years ago
+3.3.2
+2 years ago
+3.3.1
+2 years ago
+1.1.5
+2 years ago
+3.3.0
+2 years ago
+3.2.0
+2 years ago
+3.1.0
+3 years ago
+3.0.0
+3 years ago
+2.3.1
+3 years ago
+2.3.0
+3 years ago
+2.2.3
+3 years ago
+2.2.2
+3 years ago
+2.2.1
+3 years ago
+1.1.4
+3 years ago
+1.1.3
+3 years ago
+2.2.0
+3 years ago
+2.1.0
+3 years ago
+1.1.2
+3 years ago
+2.0.3
+3 years ago
+2.0.2
+3 years ago
+2.0.1
+3 years ago
+2.0.0
+3 years ago
+2.0.0-beta.2
+3 years ago
+2.0.0-beta.1
+3 years ago
+2.0.0-beta.0
+3 years ago
+1.1.1
+4 years ago
+1.1.0
+4 years ago
+1.0.1
+4 years ago
+1.0.0
+4 years ago
+0.8.1
+4 years ago
+0.8.0
+4 years ago
+0.7.2
+5 years ago
+0.7.1
+5 years ago
+0.7.0
+5 years ago
+0.6.5
+5 years ago
+0.6.4
+5 years ago
+
+```
