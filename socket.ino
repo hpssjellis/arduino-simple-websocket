@@ -1,23 +1,20 @@
-
 /*
-  Web client
-
- This sketch connects to a website (http://www.google.com)
- using the WiFi module.
-
- This example is written for a network using WPA encryption. For
- WEP or WPA, change the Wifi.begin() call accordingly.
-
- This example is written for a network using WPA encryption. For
- WEP or WPA, change the Wifi.begin() call accordingly.
-
- Circuit:
- * Board with NINA module (Arduino MKR WiFi 1010, MKR VIDOR 4000 and UNO WiFi Rev.2)
-
- created 13 July 2010
- by dlf (Metodo2 srl)
- modified 31 May 2012
- by Tom Igoe
+ * socket.ino
+ * 
+ * created 13 July 2010
+ * by dlf (Metodo2 srl)
+ * modified 31 May 2012
+ * by Tom Igoe
+ * 
+ * modified By Jeremy Ellis 
+ * twitter @rocksetta
+ * Webpage http://rocksetta.com
+ * Arduino High School Robotics Course at
+ * https://github.com/hpssjellis/arduino-high-school-robotics-course
+ * 
+ *  Update Feb 12th, 2020
+ *  Specifically for the Arduino Nano 33 IoT
+ *
  */
 
 
@@ -36,11 +33,17 @@ int status = WL_IDLE_STATUS;
 //IPAddress server(74,125,232,128);  // numeric IP for Google (no DNS)
 
 
-///////////////////////// Node Websocket server url without http:// or ending /  ////////
+///////////////////////// Node Websocket server url without http:// or ending /         ////////
 
-char server[] = "8080-e8756e5d-1554-475b-9030-4a672a46409f.ws-us02.gitpod.io";    
+//   so https://myURL/
 
-///////////////////////// above is important  ////////
+//   becomes
+
+//   myURL
+
+char server[] = "https://8080-e71e03c0-51bc-4fc8-8019-df8863ff0ce8.ws-us02.gitpod.io";    
+
+///////////////////////// above is important  ////////////////////////////////////////////////////
 
 String myRandWebSocket = String(rand()*10000+10000); //attempt at random security
 
