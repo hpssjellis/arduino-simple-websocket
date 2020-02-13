@@ -109,12 +109,12 @@ void loop() {
   while (client.available()) {
     char c = client.read();
     Serial.write(c);
-    if (c == 'A') {
-       digitalWrite(LED_BUILTIN, 1);               // GET /H turns the LED on
+    if (c == 'A') {                    // can use any single letter or character
+       digitalWrite(LED_BUILTIN, 1);               
        Serial.println();
     }    
     if (c == 'B') {
-       digitalWrite(LED_BUILTIN, 0);               // GET /H turns the LED on
+       digitalWrite(LED_BUILTIN, 0);               
        Serial.println();
     }
   }
