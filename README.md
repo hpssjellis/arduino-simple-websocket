@@ -20,4 +20,4 @@ You now have high speed control of your Arduino.
 
 ------------------------------
 
-# Note: The main Arduino High School Robotics site is at:  https://github.com/hpssjellis/arduino-high-school-robotics-course
+### Note: The main Arduino High School Robotics site is at:  https://github.com/hpssjellis/arduino-high-school-robotics-course
