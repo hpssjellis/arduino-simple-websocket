@@ -31,10 +31,21 @@ Use this to test new controls flashed to the Arduino
    ws.send(document.all.myIn1.value)
 }"><br><br>
 
-<input id="myOn" type=button style="font-size:25px" value="send D7-ON = A using touchstart"    ontouchstart="{ws.send('A');return false;}" onclick="{ws.send('A');}">...
+    
+<input id="myOn" type=button style="font-size:25px" value="Send LED-ON = A" onclick="{ws.send('A');}">
 
-<input id="myOff"  type=button style="font-size:25px" value="send D7-OFF = B using touchstart" ontouchstart="{ws.send('B');return false;}" onclick="{ws.send('B');}"><br><br><br><br>
+<input id="myOff"  type=button style="font-size:25px" value="Send Led-OFF = B" onclick="{ws.send('B');}"><br><br>
+    
+Note: If seep is essential, using a touch screen the touchstart event is much faster than the onclick event.<br>
+    
+<input id="myOn" type=button style="font-size:25px" value="Send LED-ON = A using touchstart"    ontouchstart="{ws.send('A');return false;}" onclick="{ws.send('A');}">...
 
+<input id="myOff"  type=button style="font-size:25px" value="Send LED-OFF = B using touchstart" ontouchstart="{ws.send('B');return false;}" onclick="{ws.send('B');}"><br><br><br><br>
+
+Presently can only send one characterer commands.
+   
+    
+    
 
 <br><br><br><br>  
 <h1>C ping Sent every 12 seconds</h1>
