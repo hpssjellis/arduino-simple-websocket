@@ -41,7 +41,7 @@ int status = WL_IDLE_STATUS;
 
 //   myURL
 
-char server[] = "https://8080-e71e03c0-51bc-4fc8-8019-df8863ff0ce8.ws-us02.gitpod.io";    
+char server[] = "8080-e71e03c0-51bc-4fc8-8019-df8863ff0ce8.ws-us02.gitpod.io";    
 
 ///////////////////////// above is important  ////////////////////////////////////////////////////
 
