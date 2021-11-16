@@ -21,3 +21,10 @@ You now have high speed control of your Arduino.
 ------------------------------
 
 ### Note: The main Arduino High School Robotics site is at:  https://github.com/hpssjellis/arduino-high-school-robotics-course
+
+
+
+Good javascript testing link
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift
+
