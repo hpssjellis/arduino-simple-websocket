@@ -40,3 +40,11 @@ Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
 Sec-WebSocket-Protocol: com.xxx.service.v1
 Sec-WebSocket-Version: 13
 ```
+
+
+
+some good stuff at
+
+https://ably.com/blog/web-app-websockets-nodejs
+
+
