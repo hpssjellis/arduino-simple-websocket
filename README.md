@@ -28,3 +28,15 @@ Good javascript testing link
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift
 
+
+
+research new handshake
+
+```
+GET <target> HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
+Sec-WebSocket-Protocol: com.xxx.service.v1
+Sec-WebSocket-Version: 13
+```
