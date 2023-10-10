@@ -1,7 +1,7 @@
 # arduino-simple-websocket
 How to connect an Arduino to a node js websocket for fast webpage to Arduino to webpage communication.
 
-
+.
 
 To load on gitpod.io click this url (Gitpod needs you to OK Github or Gitlab for authentification)
 
