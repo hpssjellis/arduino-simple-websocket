@@ -6,7 +6,7 @@
     "url": "https://github.com/hpssjellis/arduino-simple-websocket"
   },
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.19.2",
     "ws": "7.2.1"
   }
 }
